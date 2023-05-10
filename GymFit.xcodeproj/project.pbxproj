@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0BEC0C2A0C156F00AF19A9 /* Back-Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BEC0B2A0C156F00AF19A9 /* Back-Button.swift */; };
 		2D1FC0E62A0AA59A007BAF39 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FC0E52A0AA59A007BAF39 /* Workouts.swift */; };
 		2D366BFF2A0A93FD00EEA846 /* GymFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366BFE2A0A93FD00EEA846 /* GymFitApp.swift */; };
 		2D366C032A0A93FE00EEA846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D366C022A0A93FE00EEA846 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 		2D366C1B2A0A93FE00EEA846 /* GymFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C1A2A0A93FE00EEA846 /* GymFitUITests.swift */; };
 		2D366C1D2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C1C2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift */; };
 		2D366C2D2A0A948700EEA846 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C2C2A0A948700EEA846 /* HomeView.swift */; };
+		2DB7850C2A0C112B002456A7 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7850B2A0C112B002456A7 /* Reminders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D0BEC0B2A0C156F00AF19A9 /* Back-Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Back-Button.swift"; path = "GymFit/Core/Back-Button.swift"; sourceTree = SOURCE_ROOT; };
 		2D1FC0E52A0AA59A007BAF39 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
 		2D1FC0E72A0B22A1007BAF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2D366BFB2A0A93FD00EEA846 /* GymFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,7 @@
 		2D366C1A2A0A93FE00EEA846 /* GymFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymFitUITests.swift; sourceTree = "<group>"; };
 		2D366C1C2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2D366C2C2A0A948700EEA846 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2DB7850B2A0C112B002456A7 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +164,20 @@
 		2D366C2B2A0A945A00EEA846 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2D0BEC0B2A0C156F00AF19A9 /* Back-Button.swift */,
 				2D1FC0E42A0AA572007BAF39 /* Workouts */,
+				2DB7850A2A0C111D002456A7 /* Reminders */,
 				2D1FC0E32A0AA568007BAF39 /* Home */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2DB7850A2A0C111D002456A7 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7850B2A0C112B002456A7 /* Reminders.swift */,
+			);
+			path = Reminders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +313,8 @@
 				2D366BFF2A0A93FD00EEA846 /* GymFitApp.swift in Sources */,
 				2D366C2D2A0A948700EEA846 /* HomeView.swift in Sources */,
 				2D1FC0E62A0AA59A007BAF39 /* Workouts.swift in Sources */,
+				2D0BEC0C2A0C156F00AF19A9 /* Back-Button.swift in Sources */,
+				2DB7850C2A0C112B002456A7 /* Reminders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,13 +465,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = GymFit/GymFit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GymFit/Preview Content\"";
+				DEVELOPMENT_TEAM = ALY6547M9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymFit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GymFit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,7 +494,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Andrei.GymFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,13 +508,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = GymFit/GymFit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GymFit/Preview Content\"";
+				DEVELOPMENT_TEAM = ALY6547M9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymFit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GymFit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -511,7 +537,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Andrei.GymFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

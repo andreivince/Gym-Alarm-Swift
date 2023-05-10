@@ -9,23 +9,24 @@ import SwiftUI
 import UserNotifications
 
 struct Workouts : View {
-    
+    @State var showReminders = false
     @State var start = false
     @State var to : CGFloat = 0
     @State var count = 0
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View{
-        
         ZStack{
             
             Color.black.opacity(0.06).edgesIgnoringSafeArea(.all)
-            
-            
             VStack{
-                
+                Back_Button(showReminders: $showReminders)
+                    .padding(.leading)
+                    .padding(.top, 5)
+                Spacer()
                 ZStack{
                     
+
                     Circle()
                         .trim(from: 0, to: 1)
                         .stroke(Color.black.opacity(0.09), style: StrokeStyle(lineWidth: 35, lineCap: .round))
@@ -48,7 +49,6 @@ struct Workouts : View {
 
                     }
                 }
-                
                 HStack(spacing: 20){
                     
                     Button(action: {
@@ -109,8 +109,10 @@ struct Workouts : View {
                         )
                         .shadow(radius: 6)
                     }
+                    
                 }
                 .padding(.top, 55)
+                Spacer()
             }
             
         }
@@ -147,13 +149,19 @@ struct Workouts : View {
     func Notify(){
         
         let content = UNMutableNotificationContent()
-        content.title = "Message"
-        content.body = "Timer Is Completed Successfully In Background !!!"
+        content.title = "Timer Completed"
+        content.body = "Let's Go!!"
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
         let req = UNNotificationRequest(identifier: "MSG", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+}
+
+struct Previews_Workouts_Previews: PreviewProvider {
+    static var previews: some View {
+        Workouts()
     }
 }
