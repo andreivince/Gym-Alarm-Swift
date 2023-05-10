@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1FC0E62A0AA59A007BAF39 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FC0E52A0AA59A007BAF39 /* Workouts.swift */; };
 		2D366BFF2A0A93FD00EEA846 /* GymFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366BFE2A0A93FD00EEA846 /* GymFitApp.swift */; };
-		2D366C012A0A93FD00EEA846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C002A0A93FD00EEA846 /* ContentView.swift */; };
 		2D366C032A0A93FE00EEA846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D366C022A0A93FE00EEA846 /* Assets.xcassets */; };
 		2D366C072A0A93FE00EEA846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D366C062A0A93FE00EEA846 /* Preview Assets.xcassets */; };
 		2D366C112A0A93FE00EEA846 /* GymFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C102A0A93FE00EEA846 /* GymFitTests.swift */; };
 		2D366C1B2A0A93FE00EEA846 /* GymFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C1A2A0A93FE00EEA846 /* GymFitUITests.swift */; };
 		2D366C1D2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C1C2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift */; };
+		2D366C2D2A0A948700EEA846 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366C2C2A0A948700EEA846 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D1FC0E52A0AA59A007BAF39 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		2D1FC0E72A0B22A1007BAF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2D366BFB2A0A93FD00EEA846 /* GymFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D366BFE2A0A93FD00EEA846 /* GymFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymFitApp.swift; sourceTree = "<group>"; };
-		2D366C002A0A93FD00EEA846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D366C022A0A93FE00EEA846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D366C042A0A93FE00EEA846 /* GymFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymFit.entitlements; sourceTree = "<group>"; };
 		2D366C062A0A93FE00EEA846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		2D366C162A0A93FE00EEA846 /* GymFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D366C1A2A0A93FE00EEA846 /* GymFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymFitUITests.swift; sourceTree = "<group>"; };
 		2D366C1C2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D366C2C2A0A948700EEA846 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1FC0E32A0AA568007BAF39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D366C2C2A0A948700EEA846 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2D1FC0E42A0AA572007BAF39 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				2D1FC0E52A0AA59A007BAF39 /* Workouts.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
 		2D366BF22A0A93FD00EEA846 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +114,9 @@
 		2D366BFD2A0A93FD00EEA846 /* GymFit */ = {
 			isa = PBXGroup;
 			children = (
-				2D366BFE2A0A93FD00EEA846 /* GymFitApp.swift */,
-				2D366C002A0A93FD00EEA846 /* ContentView.swift */,
+				2D1FC0E72A0B22A1007BAF39 /* Info.plist */,
+				2D366C292A0A943A00EEA846 /* App */,
+				2D366C2B2A0A945A00EEA846 /* Core */,
 				2D366C022A0A93FE00EEA846 /* Assets.xcassets */,
 				2D366C042A0A93FE00EEA846 /* GymFit.entitlements */,
 				2D366C052A0A93FE00EEA846 /* Preview Content */,
@@ -127,6 +147,23 @@
 				2D366C1C2A0A93FE00EEA846 /* GymFitUITestsLaunchTests.swift */,
 			);
 			path = GymFitUITests;
+			sourceTree = "<group>";
+		};
+		2D366C292A0A943A00EEA846 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D366BFE2A0A93FD00EEA846 /* GymFitApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D366C2B2A0A945A00EEA846 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D1FC0E42A0AA572007BAF39 /* Workouts */,
+				2D1FC0E32A0AA568007BAF39 /* Home */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D366C012A0A93FD00EEA846 /* ContentView.swift in Sources */,
 				2D366BFF2A0A93FD00EEA846 /* GymFitApp.swift in Sources */,
+				2D366C2D2A0A948700EEA846 /* HomeView.swift in Sources */,
+				2D1FC0E62A0AA59A007BAF39 /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +455,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GymFit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymFit/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GymFit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymFit/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
